@@ -22,7 +22,7 @@ def detect_family(target):
         pass
 
     raise ValueError("Invalid IP address.")
-    # ------------------ Banner Grabbing ------------------ #
+# ------------------ Banner Grabbing ------------------ #
 async def grab_banner(target, port, family):
     try:
         if family == socket.AF_INET6:
@@ -50,7 +50,7 @@ async def grab_banner(target, port, family):
 
     except:
         return None
-        # ------------------ Basic Port Scan (Thread) ------------------ #
+# ------------------ Basic Port Scan (Thread) ------------------ #
 def thread_scan(target, port, family):
     try:
         sock = socket.socket(family, socket.SOCK_STREAM)
